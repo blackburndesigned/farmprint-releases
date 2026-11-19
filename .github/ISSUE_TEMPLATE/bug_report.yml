@@ -1,0 +1,53 @@
+name: Report a bug
+description: Something in FarmPrint isn't working the way it should.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve FarmPrint. Please don't include customer names, addresses, emails or anything else private. Screenshots are welcome, but blur any customer info first.
+  - type: input
+    id: version
+    attributes:
+      label: FarmPrint version
+      description: Find it in Settings › General.
+      placeholder: "0.9.15"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Computer
+      options:
+        - Mac
+        - Windows
+        - Linux
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Tell us what you saw, including any error message word for word.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we make it happen again?
+      placeholder: |
+        1. Open Orders
+        2. Click …
+        3. …
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
+      description: Drag images here. Mention your slicer and printer model if this involves Print!.

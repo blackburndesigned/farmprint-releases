@@ -1,0 +1,33 @@
+name: Request a feature
+description: An idea that would make FarmPrint work better for your shop.
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the job in your shop, not the solution yet. For example "I lose track of which orders still need packing."
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+      description: How you picture it working in FarmPrint.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part of FarmPrint?
+      options:
+        - Orders
+        - ANDON
+        - Printers / Print!
+        - Catalog / products
+        - Shop website / store orders
+        - Shipping
+        - Something else
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots, sketches or anything else
